@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — Maria's Cafeteria & Bistrô</title>
+  <meta name="description" content="Fale com a Maria's Cafeteria & Bistrô. Endereço na Rua Jorge Rizk, 15, Praia das Gaivotas, Vila Velha - ES. WhatsApp, mapa e reservas.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-icone">☕</span>
+        <span>Maria's<small>Cafeteria & Bistrô</small></span>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero-conteudo">
+      <nav class="breadcrumb" aria-label="Você está em">
+        <a href="index.html">Início</a><span class="sep">/</span><span aria-current="page">Contato</span>
+      </nav>
+      <span class="tag">Contato</span>
+      <h1>A gente adora uma boa visita</h1>
+      <p>Venha nos conhecer, faça uma reserva ou encomende aquele bolo especial.</p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="secao" style="background:var(--creme);">
+    <div class="container contato-grid">
+
+      <div class="contato-info-card reveal">
+        <h3>Onde nos encontrar</h3>
+        <div class="contato-linha">
+          <div class="ic"><i class="fa-solid fa-location-dot"></i></div>
+          <div><strong>Endereço</strong><span>Rua Jorge Rizk, 15 — Praia das Gaivotas<br>Vila Velha - ES, 29102-573</span></div>
+        </div>
+        <div class="contato-linha">
+          <div class="ic"><i class="fa-brands fa-whatsapp"></i></div>
+          <div><strong>WhatsApp</strong><span>(27) 99612-1830</span></div>
+        </div>
+        <div class="contato-linha">
+          <div class="ic"><i class="fa-brands fa-instagram"></i></div>
+          <div><strong>Instagram</strong><span>@mariascafeteriaebistro</span></div>
+        </div>
+        <div class="contato-linha">
+          <div class="ic"><i class="fa-solid fa-clock"></i></div>
+          <div>
+            <strong>Horário</strong>
+            <span>Seg a Sex: 8h às 19h<br>Sáb e Dom: 8h às 20h</span>
+            <div class="status-loja" role="status" style="margin-top:10px;"></div>
+          </div>
+        </div>
+        <a href="https://wa.me/5527996121830?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Maria's" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Reservar mesa</a>
+      </div>
+
+      <div class="form-card reveal">
+        <h3 style="margin-bottom:8px;">Envie uma mensagem</h3>
+        <p style="margin-bottom:24px;color:var(--texto-claro);">Dúvidas, encomendas ou eventos? Escreva pra gente que respondemos rapidinho.</p>
+        <form class="form-contato" novalidate>
+          <div class="form-grupo">
+            <label for="nome">Nome completo <span class="campo-obrigatorio" aria-hidden="true">*</span></label>
+            <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required>
+            <span class="erro-campo"><i class="fa-solid fa-circle-exclamation"></i> Por favor, informe seu nome.</span>
+          </div>
+          <div class="form-grupo">
+            <label for="email">E-mail <span class="campo-obrigatorio" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            <span class="erro-campo"><i class="fa-solid fa-circle-exclamation"></i> Informe um e-mail válido (ex.: nome@email.com).</span>
+          </div>
+          <div class="form-grupo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(27) 99999-9999">
+            <span class="form-dica">Opcional — facilita o retorno pelo WhatsApp.</span>
+          </div>
+          <div class="form-grupo">
+            <label for="mensagem">Mensagem <span class="campo-obrigatorio" aria-hidden="true">*</span></label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <span class="erro-campo"><i class="fa-solid fa-circle-exclamation"></i> Escreva sua mensagem antes de enviar.</span>
+          </div>
+          <p class="form-dica" style="margin-bottom:16px;">Campos com <span class="campo-obrigatorio">*</span> são obrigatórios.</p>
+          <button type="submit" class="btn btn-cafe"><i class="fa-solid fa-paper-plane"></i> Enviar mensagem</button>
+          <div class="form-msg"></div>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="mapa-wrapper reveal">
+        <iframe
+          src="https://www.google.com/maps?q=Rua+Jorge+Rizk,+15+-+Praia+das+Gaivotas,+Vila+Velha+-+ES&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa da Maria's Cafeteria & Bistrô"></iframe>
+      </div>
+      <div style="text-align:center;margin-top:26px;" class="reveal">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Jorge+Rizk,+15+-+Praia+das+Gaivotas,+Vila+Velha+-+ES" class="btn btn-cafe" target="_blank" rel="noopener"><i class="fa-solid fa-route"></i> Abrir rota no Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="secao" style="background:var(--branco);">
+    <div class="container">
+      <div class="secao-titulo reveal">
+        <span class="tag">Dúvidas frequentes</span>
+        <h2>Perguntas rápidas</h2>
+        <div class="divisor"><i class="fa-solid fa-mug-hot"></i></div>
+      </div>
+      <div class="faq-lista reveal">
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">Precisa reservar mesa? <span class="seta"><i class="fa-solid fa-chevron-down"></i></span></button>
+          <div class="faq-resposta"><p>Não é obrigatório, mas para grupos ou fins de semana recomendamos reservar pelo WhatsApp para garantir seu cantinho.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">Vocês fazem bolos por encomenda? <span class="seta"><i class="fa-solid fa-chevron-down"></i></span></button>
+          <div class="faq-resposta"><p>Sim! Fazemos bolos de aniversário e para eventos, feitos com todo carinho. Fale com a gente com pelo menos 3 dias de antecedência.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">Têm opções sem lactose ou vegetarianas? <span class="seta"><i class="fa-solid fa-chevron-down"></i></span></button>
+          <div class="faq-resposta"><p>Temos, sim! Vários itens do cardápio têm versões vegetarianas e sem lactose. É só perguntar ao nosso time na hora do pedido.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">O espaço é bom para trabalhar ou estudar? <span class="seta"><i class="fa-solid fa-chevron-down"></i></span></button>
+          <div class="faq-resposta"><p>Com certeza! Temos Wi-Fi, tomadas e um ambiente tranquilo e aconchegante — perfeito pra passar horas com um bom café.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">Vocês recebem eventos particulares? <span class="seta"><i class="fa-solid fa-chevron-down"></i></span></button>
+          <div class="faq-resposta"><p>Sim, o espaço já recebeu encontros e workshops. Envie uma mensagem contando sua ideia que montamos algo especial pra você.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo">
+            <span class="logo-icone">☕</span>
+            <span>Maria's<small>Cafeteria & Bistrô</small></span>
+          </a>
+          <p>Mais que café, um lugar pra se sentir em casa. Sabores que aquecem e momentos que ficam.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/mariascafeteriaebistro/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/5527996121830" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <div class="footer-contato-item"><i class="fa-solid fa-location-dot"></i> Rua Jorge Rizk, 15<br>Praia das Gaivotas, Vila Velha - ES</div>
+          <div class="footer-contato-item"><i class="fa-brands fa-whatsapp"></i> (27) 99612-1830</div>
+          <div class="footer-contato-item"><i class="fa-brands fa-instagram"></i> @mariascafeteriaebistro</div>
+        </div>
+        <div class="footer-col">
+          <h4>Horário</h4>
+          <p>Segunda a Sexta: 8h às 19h</p>
+          <p>Sábado e Domingo: 8h às 20h</p>
+          <a href="https://wa.me/5527996121830" class="btn btn-whatsapp" style="margin-top:10px;" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Fale conosco</a>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>© 2026 Maria's Cafeteria & Bistrô. Todos os direitos reservados.</p>
+        <span class="aviso">☕ Protótipo para demonstração comercial</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5527996121830?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Maria's" class="whats-flutuante" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <button class="topo-btn" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

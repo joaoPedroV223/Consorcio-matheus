@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria — Maria's Cafeteria & Bistrô</title>
+  <meta name="description" content="Fotos da Maria's Cafeteria & Bistrô: nossos cafés, bolos, brunch e o ambiente acolhedor na Praia das Gaivotas, Vila Velha - ES.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-icone">☕</span>
+        <span>Maria's<small>Cafeteria & Bistrô</small></span>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="galeria.html" class="ativo">Galeria</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero-conteudo">
+      <nav class="breadcrumb" aria-label="Você está em">
+        <a href="index.html">Início</a><span class="sep">/</span><span aria-current="page">Galeria</span>
+      </nav>
+      <span class="tag">Galeria</span>
+      <h1>O aconchego da Maria's em imagens</h1>
+      <p>Um pouquinho dos nossos sabores e do nosso cantinho. Clique nas fotos para ampliar.</p>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="secao" style="background:var(--creme);">
+    <div class="container">
+      <div class="galeria-grid reveal">
+
+        <div class="galeria-item grande">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=700&q=80"
+               data-full="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1400&q=90" alt="Ambiente da cafeteria">
+          <div class="overlay"><span>Nosso ambiente</span><div class="lupa"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80"
+               data-full="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=1400&q=90" alt="Café Pink Kiss">
+          <div class="overlay"><span>Pink Kiss</span><div class="lupa"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80"
+               data-full="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1400&q=90" alt="Bolo artesanal">
+          <div class="overlay"><span>Bolos artesanais</span><div class="lupa"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        </div>
+        <div class="galeria-item largo">
+          <img src="https://images.unsplash.com/photo-1533920379810-6bedac961555?auto=format&fit=crop&w=800&q=80"
+               data-full="https://images.unsplash.com/photo-1533920379810-6bedac961555?auto=format&fit=crop&w=1400&q=90" alt="Brunch completo">
+          <div class="overlay"><span>Brunch da Maria's</span><div class="lupa"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80"
+               data-full="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=1400&q=90" alt="Cheesecake">
+          <div class="overlay"><span>Cheesecake</span><div class="lupa"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&q=80"
+               data-full="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1400&q=90" alt="Xícara de café">
+          <div class="overlay"><span>Café fresquinho</span><div class="lupa"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
+               data-full="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1400&q=90" alt="Sanduíche do bistrô">
+          <div class="overlay"><span>Cozinha de bistrô</span><div class="lupa"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        </div>
+        <div class="galeria-item grande">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=80"
+               data-full="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=90" alt="Mesa aconchegante">
+          <div class="overlay"><span>Pra ficar horas</span><div class="lupa"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
+               data-full="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1400&q=90" alt="Bolo decorado">
+          <div class="overlay"><span>Encomendas especiais</span><div class="lupa"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80"
+               data-full="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1400&q=90" alt="Latte art">
+          <div class="overlay"><span>Feito com arte</span><div class="lupa"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="secao cta-bloco">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta-conteudo">
+          <h2>Melhor do que ver é provar</h2>
+          <p>Venha nos visitar na Praia das Gaivotas ou faça seu pedido pelo WhatsApp.</p>
+          <div class="cta-botoes">
+            <a href="cardapio.html" class="btn btn-primario"><i class="fa-solid fa-book-open"></i> Ver cardápio</a>
+            <a href="https://wa.me/5527996121830?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Maria's" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo">
+            <span class="logo-icone">☕</span>
+            <span>Maria's<small>Cafeteria & Bistrô</small></span>
+          </a>
+          <p>Mais que café, um lugar pra se sentir em casa. Sabores que aquecem e momentos que ficam.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/mariascafeteriaebistro/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/5527996121830" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <div class="footer-contato-item"><i class="fa-solid fa-location-dot"></i> Rua Jorge Rizk, 15<br>Praia das Gaivotas, Vila Velha - ES</div>
+          <div class="footer-contato-item"><i class="fa-brands fa-whatsapp"></i> (27) 99612-1830</div>
+          <div class="footer-contato-item"><i class="fa-brands fa-instagram"></i> @mariascafeteriaebistro</div>
+        </div>
+        <div class="footer-col">
+          <h4>Horário</h4>
+          <p>Segunda a Sexta: 8h às 19h</p>
+          <p>Sábado e Domingo: 8h às 20h</p>
+          <a href="https://wa.me/5527996121830" class="btn btn-whatsapp" style="margin-top:10px;" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Fale conosco</a>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>© 2026 Maria's Cafeteria & Bistrô. Todos os direitos reservados.</p>
+        <span class="aviso">☕ Protótipo para demonstração comercial</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox">
+    <button class="lightbox-fechar" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-nav anterior" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+    <img src="" alt="Imagem ampliada">
+    <span class="lightbox-contador" aria-live="polite"></span>
+    <button class="lightbox-nav proximo" aria-label="Próxima"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <a href="https://wa.me/5527996121830?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Maria's" class="whats-flutuante" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <button class="topo-btn" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
